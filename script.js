@@ -3,7 +3,7 @@ let selectedUnit='c';
 async function getWeatherData(){
     let weatherData={};
     let key='f58b33c8c9af4504a9b133344240406';
-    let urlForecast='http://api.weatherapi.com/v1/forecast.json?'
+    let urlForecast='https://api.weatherapi.com/v1/forecast.json?'
     let location=input.value;
 
     res=await fetch(urlForecast+'key='+key+'&days=3&q='+location+'&aqi=no', {mode: 'cors'});
