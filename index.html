@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <script src="script.js" defer></script>
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input type="text" name="search" id="search" placeholder="Search for cities">
+        </div>
+        <div class="radio-container">
+            <label>
+                <input type="radio" name="unit" id="unitC" value="c" checked>
+                Use Celsius</label>
+            <label>
+                <input type="radio" name="unit" id="unitF" value="f">
+                Use Fahrenheit</label>
+        </div>
+        <div class="info-display">
+            <div class="first-row">
+                <div class="city-info">
+                    <h2 class="city-name"></h2>
+                    <p></p>
+                </div>
+                <h2 class="temperature"></h2>
+                <img src="" alt="icona">
+            </div>
+            <div class="second-row">
+                <h2>Today's forecast</h2>
+                <div class="items-container">
+                    <div class="weather-item">
+                        <span class="time"></span>
+                        <img src="" alt="">
+                        <h3 class="temp"></h3>
+                    </div>
+                    <div class="weather-item">
+                        <span class="time"></span>
+                        <img src="" alt="">
+                        <h3 class="temp"></h3>
+                    </div>
+                    <div class="weather-item">
+                        <span class="time"></span>
+                        <img src="" alt="">
+                        <h3 class="temp"></h3>
+                    </div>
+                    <div class="weather-item">
+                        <span class="time"></span>
+                        <img src="" alt="">
+                        <h3 class="temp"></h3>
+                    </div>
+                    <div class="weather-item">
+                        <span class="time"></span>
+                        <img src="" alt="">
+                        <h3 class="temp"></h3>
+                    </div>
+                    <div class="weather-item">
+                        <span class="time"></span>
+                        <img src="" alt="">
+                        <h3 class="temp"></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="third-row">
+                <div class="firstline">
+                    <h2>Air conditions</h2>
+                    <button type="button">See more</button>
+                </div>
+                <div class="conditions">
+                    <div class="condition-item">
+                        <span class="material-symbols-outlined">
+                            thermometer
+                        </span>
+                        <h3 class="title">Real feel</h3>
+                        <h2 class="data"></h2>
+                    </div>
+                    <div class="condition-item">
+                        <span class="material-symbols-outlined">
+                            air
+                        </span>
+                        <h3 class="title">Wind</h3>
+                        <h2 class="data"></h2>
+                    </div>
+                    <div class="condition-item">
+                        <span class="material-symbols-outlined">
+                            humidity_low
+                        </span>
+                        <h3 class="title">Humidity</h3>
+                        <h2 class="data"></h2>
+                    </div>
+                    <div class="condition-item">
+                        <span class="material-symbols-outlined">
+                            flare
+                        </span>
+                        <h3 class="title">UV index</h3>
+                        <h2 class="data"></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="side-content">
+            <h2>3 day forecast</h2>
+            <div class="side-container">
+                <div class="side-item">
+                    <p class="day">Today</p>
+                    <img src="" alt="">
+                    <h2 class="weather"></h2>
+                    <h2 class="temps"></h2>
+                </div>
+                <div class="side-item">
+                    <p class="day"></p>
+                    <img src="" alt="">
+                    <h2 class="weather"></h2>
+                    <h2 class="temps"></h2>
+                </div>
+                <div class="side-item">
+                    <p class="day"></p>
+                    <img src="" alt="">
+                    <h2 class="weather"></h2>
+                    <h2 class="temps"></h2>
+                </div>                
+            </div>
+            <h2 id="astro">Astro</h2>
+            <div class="astro-container">
+                <div class="astro-item">
+                    <span class="material-symbols-outlined">
+                        water_lux
+                    </span>
+                    <p>Sunrise</p>
+                    <p id="time"></p>
+                </div>
+                <div class="astro-item">
+                    <span class="material-symbols-outlined">
+                        wb_twilight
+                    </span>
+                    <p>Sunset</p>
+                    <p id="time"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
